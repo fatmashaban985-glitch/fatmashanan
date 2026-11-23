@@ -1,0 +1,84 @@
+:root {
+  --top: #fff2ad;
+  --middle: #f6cf65;
+  --bottom: #d89a26;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #fffaf0, #eadab5);
+  color: #3c2d12;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 24px;
+  font-size: clamp(28px, 7vw, 52px);
+}
+
+.crown {
+  width: min(72vw, 380px);
+  height: auto;
+  filter: drop-shadow(0 16px 12px rgba(92, 63, 20, .22));
+}
+
+.top {
+  fill: var(--top);
+}
+
+.middle {
+  fill: var(--middle);
+}
+
+.bottom {
+  fill: var(--bottom);
+}
+
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+button {
+  width: 46px;
+  height: 46px;
+  border: 3px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(60, 45, 18, .18);
+}
+
+button:focus-visible {
+  outline: 3px solid #245b9b;
+  outline-offset: 3px;
+}
+
+button[aria-pressed="true"] {
+  outline: 3px solid #3c2d12;
+  outline-offset: 3px;
+}
+
+.gold {
+  background: #e4ae38;
+}
+
+.silver {
+  background: #adb7c0;
+}
+
+.rose {
+  background: #c77a67;
+}
